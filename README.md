@@ -113,7 +113,7 @@ git stash pop #从Git栈中读取最近一次保存的内容
 
 2.   再通过git commit -m "注释内容"把项目提交到仓库。
 
-4.   ==在Github上设置好SSH密钥后，新建一个远程仓库，通过git remote add origin 仓库url地址将本地仓库和远程仓库进行关联==
+4.   在Github上设置好SSH密钥后，新建一个远程仓库，通过git remote add origin 仓库url地址将本地仓库和远程仓库进行关联
 
 5. 最后通过git push -u origin master把本地仓库的项目推送到远程仓库（也就是Github）上
 6. <font color=red size=6 face=“黑体”>遇到坑看上面</font><table><tr>
