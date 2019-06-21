@@ -1,6 +1,6 @@
 # 下载git 并上传本地项目到github
-1. windows用户  下载Git软件：https://git-scm.com/downloads![image](05F5F420E81C4052958B9264E62104E2)
-2. 安装就是一路next，安装完成后你可以在安装目录下找到git-bash，可以由个人喜好把它放到桌面，git-bash操作命令就是linux的操作命令。 ![image](28F74A2AD0E04AABA782FE7FA015CE0D)
+1. windows用户  下载Git软件：https://git-scm.com/downloads![git网站.png](https://img.alicdn.com/imgextra/i1/1860006657/O1CN011DcCTA1z2x9G0fSUS_!!1860006657.png)
+2. 安装就是一路next，安装完成后你可以在安装目录下找到git-bash，可以由个人喜好把它放到桌面，git-bash操作命令就是linux的操作命令。 ![git安装目录找到gitbash.png](https://img.alicdn.com/imgextra/i3/1860006657/O1CN01xytmXH1z2x9FwJZ7J_!!1860006657.png)
 3.  安装好git后，在命令行或终端中使用下面的命令可以设置git自己的名字和电子邮件。这是因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。
 ```bash
 #在git bash界面输入如下内容即可完成邮箱的注册：
@@ -9,7 +9,7 @@
  git config --global user.email "yourmail@youremail.com.cn"
 #（说明： 双引号中需要输入你的有效邮箱，比如“12131312@163.com”）
 ```
-![image](D4A5A505A3E442B68BD8DD24C8FD00F2)
+![image](https://img.alicdn.com/imgextra/i1/1860006657/O1CN01qq2U291z2x9GqrTit_!!1860006657.png)
 4. 查看是否存在密钥ssh keys
 ```bash
 #命令
@@ -25,24 +25,28 @@ Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 #以上同样可以用Enter键输入，应该是默认密码
 ```
-![image](F8AC2535746C49978DBD1755A3F0A1CE)
+![image](https://img.alicdn.com/imgextra/i3/1860006657/O1CN01Ielj9Z1z2x9G0fBr2_!!1860006657.png)
 
 ```bash
 #这样 操作可以在C:\Users\TWODOG\.ssh 下 生成ssh keys。包括两个文件rd_rsa和id_rsa.pub(llinux 下就在~/.ssh）两种操作系统在git-bash里面都可以用同样的方式打开，当然这不重要，只是告诉你文件在哪。
 #[windows ]打开idb_rsa.pub文件、复制内容、打开自己的github，找到Settings-->SSH and GPG keys  粘贴到key里面，点击Add SSH key 具体看下图
 ```
-![image](F4DD938B49F84F9AB8834AF940F894E3)
-![image](43768B5A879E4B86B3915A59B77EB29F)
+![image](https://img.alicdn.com/imgextra/i2/1860006657/O1CN019oNDw71z2x9JFaTXu_!!1860006657.png)
+![image](https://img.alicdn.com/imgextra/i3/1860006657/O1CN01j2lnJw1z2x9IlesMO_!!1860006657.png)
+
+
 密钥添加完成，下次在使用时就不需要再添加密钥了。
-6. 开始上传本地文件到git上。我们需要先创建一个本地的版本库（其实也就是一个文件夹）。你可以直接右击新建文件夹，也可以右击打开Git bash命令行窗口通过命令来创建。现在我通过命令行在桌面新建一个testapp文件夹（你也可以在其他任何地方创建这个文件夹），并且进入这个文件夹。
-![image](0EB16EA3C31B4A179C7362CE0239D533)
+6. 开始上传本地文件到git上。我们需要先创建一个本地的版本库（其实也就是一个文件夹）。你可以直接右击新建文件夹，也可以右击打开Git bash命令行窗口通过命令来创建。现在我通过命令行在桌面新建一个gittest文件夹（你也可以在其他任何地方创建这个文件夹），并且进入这个文件夹。
+
+![image](https://img.alicdn.com/imgextra/i2/1860006657/O1CN01ewMryr1z2x9HrEEKs_!!1860006657.png)
 7. 通过命令把这个文件夹变成Git可管理的仓库
  ```bash
  git init
  ```
- ![image](CCEA28B6EFF34269B6B17BC07721CCAD)![image](D72EA502AF8D4C7984B363C47B2C3F7B)
+ ![image](https://img.alicdn.com/imgextra/i2/1860006657/O1CN016YhC0A1z2x9JFYKUa_!!1860006657.png)
+ ![image](https://img.alicdn.com/imgextra/i4/1860006657/O1CN01OXjv391z2x9D41PPj_!!1860006657.png)
  8. 这时候你就可以把你的项目粘贴到这个本地Git仓库里面（粘贴后你可以通过git status来查看你当前的状态），然后通过git add把项目添加到仓库（或git add .把该目录下的所有文件添加到仓库，注意点是用空格隔开的）。在这个过程中你其实可以一直使用git status来查看你当前的状态。如果文件内有东西会出现红色的字，不是绿色，这不是错误。
- ![image](8D479D178F544E43BABECDC864CE4EB2)
+ ![image](https://img.alicdn.com/imgextra/i4/1860006657/O1CN01MCgelG1z2x98WI7DA_!!1860006657.png)
 ```bash
 #把文件夹下的所有文件添加到仓库
 git add .
@@ -50,17 +54,17 @@ git add .
 把项目提交到仓库并添加更新注释
 git commit -m "更新注释"
 ```
-![image](ABBC32E410A04360AE513336568A6F11)
+![image](https://img.alicdn.com/imgextra/i1/1860006657/O1CN01nqdkLr1z2x9HBihFU_!!1860006657.png)
 
 9.  在Github上创建一个Git仓库。
-![image](03E27407D13242FB9B1F764979D989C5)
+![image](https://img.alicdn.com/imgextra/i2/1860006657/O1CN01FKCkE61z2x9JFbgOc_!!1860006657.png)
 10. 在Github上创建好Git仓库之后我们就可以和本地仓库进行关联了，根据创建好的Git仓库页面的提示，可以在本地仓库的命令行输入
-![image](3B1EBFD6F42140A0A8D855E4CAE02812)
+![image](https://img.alicdn.com/imgextra/i3/1860006657/O1CN015vYQh71z2x98WGqF5_!!1860006657.png)
 ```bash
  # 关联一个github远程仓库 <address>是仓库地址 【请忽略<>】origin是我们命名远程仓库的名字，可以随意取名，但是一般我们看到origin就是远程仓库
 git remote add origin <上图复制的地址>
 ```
-![image](A8C8314BDC4A4F4487CD9F1CCF262262)
+![image](https://img.alicdn.com/imgextra/i1/1860006657/O1CN01CHMxcW1z2x9ELcrxD_!!1860006657.png)
 ```bash
 # 由于新建的远程仓库是空的，所以要加上-u这个参数，等远程仓库里面有了内容之后，
 git push -u origin master
@@ -69,13 +73,13 @@ git push  origin master
 
 ```
 这时候你再重新刷新你的Github页面进入刚才新建的那个仓库里面就会发现项目已经成功上传了：
-![image](1BC25926255B48989FF4AEA6C6176F51)
+![image](https://img.alicdn.com/imgextra/i4/1860006657/O1CN01SZSRxH1z2x9FwKIqd_!!1860006657.png)
 
 
 ---
 ### 一些坑
 你以为完了其实并没有：就是在上面第七步创建远程仓库的时候，如果你勾选了Initialize this repository with a README（就是创建仓库的时候自动给你创建一个README文件），那么到了第九步你将本地仓库内容推送到远程仓库的时候就会报一个to   https://github.com/codetwodog/gittest的错
-![image](6EC027A2E4E94FB8879E1C24D16F10B5)
+![image](https://img.alicdn.com/imgextra/i3/1860006657/O1CN01iGfsWs1z2x9IZNdTd_!!1860006657.png)
 这是由于你新创建的那个仓库里面的README文件不在本地仓库目录中，这时我们可以通过以下命令先将内容合并以下：
 ```bash
 # 远程仓库与本地合并
@@ -87,7 +91,7 @@ git pull --rebase origin master
 ---
 ## 另一个坑
 如果你在提交之后再进行远程仓库和本地合并，会报一个错，，如下图
-![image](66C467DD31CD4869890D16DA3A19A3B3)
+![image](https://img.alicdn.com/imgextra/i3/1860006657/O1CN018cTvyh1z2x9JFasWH_!!1860006657.png)
 ```bash
 #原因：如果有未提交的更改，是不能git pull的
 #解决：
