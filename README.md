@@ -107,15 +107,15 @@ git stash pop #从Git栈中读取最近一次保存的内容
 
 ---
 总结一下：（注意：如果中途弹出输入框让你填写用户名和密码，只需把GitHub的账号和密码填写上即可。）
-1. ==在本地创建一个版本库（即文件夹），通过git init把它变成Git仓库。==
+1. 在本地创建一个版本库（即文件夹），通过git init把它变成Git仓库。
 
-2.  ==把项目复制到这个文件夹里面，再通过git add .把项目添加到仓库。==
+2. 把项目复制到这个文件夹里面，再通过git add .把项目添加到仓库。
 
-2.   ==再通过git commit -m "注释内容"把项目提交到仓库。==
+2.   再通过git commit -m "注释内容"把项目提交到仓库。
 
 4.   ==在Github上设置好SSH密钥后，新建一个远程仓库，通过git remote add origin 仓库url地址将本地仓库和远程仓库进行关联==
 
-5. ==最后通过git push -u origin master把本地仓库的项目推送到远程仓库（也就是Github）上==
+5. 最后通过git push -u origin master把本地仓库的项目推送到远程仓库（也就是Github）上
 6. <font color=red size=6 face=“黑体”>遇到坑看上面</font><table><tr>
 
 
